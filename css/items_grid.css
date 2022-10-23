@@ -139,7 +139,10 @@
     background-color: rgba(92,126,150,0.6);
     border-radius: 10px;;
   }
+  .item:after {
+    opacity: 0.2;
   }
+}
 
 @media screen and (max-width: 584px) {
   .items {

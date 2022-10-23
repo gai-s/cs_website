@@ -187,4 +187,15 @@ header {
   }
 }
 
+@media screen and (max-width: 345px) {
+  
+  #navbar .logo, #about #navbar .logo{
+    width: 12rem;
+  }
+  
+  #navbar .left-nav .call-now-icon {
+    font-size: 0.6rem;
+  }
+  
+  }
 
