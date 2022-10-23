@@ -190,7 +190,7 @@ header {
 @media screen and (max-width: 440px) {
   
   #navbar .logo, #about #navbar .logo{
-    width: 224px;
+    width: 240px;
   }
   
   #navbar .left-nav .call-now-icon {
