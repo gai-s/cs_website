@@ -176,7 +176,7 @@ p {
   width: 50%;
   height: 100%;
   text-align: center;
-  padding: 50px 30px;
+  padding: 20px 30px;
   overflow: hidden;
 }
 
@@ -457,14 +457,14 @@ p {
 
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1097px) {
   #home-info .info-content a{
     display: none;  
   }
 
   
 #home-info .info-content {
-  padding: 20px 30px;
-
+  padding: 0 30px;
+  font-size: 0.9rem;
 }
 }

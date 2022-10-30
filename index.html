@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="NOINDEX, NOFOLLOW">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   <meta name="description" content="Welcome to the most extraordinary hotel in Boston Massachusetts">
   <meta name="keywords" content="טכנאי מחשבים בחדרה, טכנאי מחשבים בנתניה, טכנאי מחשבים חדרה, טכנאי מחשבים נתניה, טכנאי מחשבים עד הבית, שירות למחב, תיקון המחשב, תיקון מחשבים, שירות למחשב קובי שבתאי, טכנאי מחשבים בחדרה קובי שבתאי טכנאי מחשבים עד הבית, טכנאי מחשבים בחדרה קובי שבתאי טכנאי מחשבים עד הבית">
   <!-- <script src="https://kit.fontawesome.com/93fcf75ed7.js" crossorigin="anonymous"></script> -->
@@ -46,19 +48,17 @@
     <div class="info-content">
       <h2>טכנאי מחשבים בחדרה קובי שבתאי <span class="text-primary">שירות מהיר ומקצועי עד הבית</span></h2>
       <p>
-        חלונות קופצים? וירוסים? הודעות שגיאה? המחשב איטי? המחשב מרעיש? האינטרנט לא זז?
+        חלונות קופצים? וירוסים? הודעות שגיאה? המחשב איטי? האינטרנט לא זז?
         <br>
-        המסך לא עובד? מסך כחול? האימיילים לא עובדים? המחשב לא נדלק? המחשב מפעיל את עצמו מחדש? נעלמו האייקונים? הדיסק קשיח מרעיש? נמחקו לכם הקבצים והתמונות?
+        אולי זה המסך שלא עובד? מסך כחול? האימיילים לא עובדים? המחשב לא נדלק? המחשב מפעיל את עצמו מחדש? הדיסק קשיח מרעיש? נמחקו לכם הקבצים והתמונות?
         <br>
-         האם אתם צריכים שדרוג למחשב בבית או בעסק? 
-        האם אתם מעוניינים בהתקנה של תוכנה כזו או אחרת  בבית או בעסק?
-        האם אתם צריכים שדרוג למחשב בבית או בעסק?
-        מעוניינים לעשות גיבוי חכם בענן ו/או גיבוי מקומי?
+        האם אתם צריכים שדרוג למחשב בבית או בעסק? האם אתם מעוניינים בהתקנה של תוכנה כזו או אחרת? אולי אתם מחפשים איך לעשות גיבוי חכם בענן ו/או גיבוי מקומי?        
         <br>
-        אם עניתם כן על אחת מן השאלות אז הגעתם למקום הנכון!
+        <br>
+        <strong>אם עניתם כן על אחת מן השאלות אז הגעתם למקום הנכון!</strong>
         בשיחת טלפון קצרה תקבלו במחיר הוגן מענה מהיר מקצועי והכי חשוב-אמין!
         <br>
-        עם ניסיון של 25 שנה, ומאות לקוחות מרוצים, אני מכיר טוב את הצרכים שלכם כלקוחות אני יכול להבטיח שתהיו מרוצים!
+        עם ניסיון של 25 שנה, ואלפי לקוחות מרוצים, אני מכיר טוב את הצרכים שלכם כלקוחות, אני יכול להבטיח שתהיו מרוצים!
       </p>
       <a href="about.html" class="btn btn-light">למידע נוסף וביקורות</a>
     </div>
@@ -403,7 +403,7 @@
       <div class="column">
         <div class="column-2 bg-light">
           <h2 class="l-heading">צרו קשר</h2>
-          <form action="" id="contact-form">
+          <form id="contact-form">
             <div class="form-group">
               <!-- <label for="name">שם</label> -->
               <input type="text" name="name" id="name" placeholder="שם">
@@ -444,5 +444,20 @@
       <a href="#contact"><i class="fa-solid fa-envelope fa-3x"></i></a>
     </div>
   </footer>
+  <script>
+    let form = document.querySelector('form');
+    form.addEventListener("submit", onSubmit);
+    function onSubmit(e) {
+      e.preventDefault();
+      let name=document.getElementById("name").value;
+      let phone=document.getElementById("phone").value;
+      let message=document.getElementById("message").value;
+
+      window.location.href = `mailto:cobishabtay@gmail.com?subject=פנייה לשירות למחשב-קובי שבתאי&body=שם: ${name}
+      טלפון: ${phone}, 
+      תיאור תקלה: ${message}`;
+      alert("תודה על הפנייה!");
+    }
+  </script>
 </body>
 </html>
