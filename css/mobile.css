@@ -116,6 +116,9 @@ header {
 .l-heading {
   text-align: center;
 }
+#home-info .info-content {
+  font-size: 1rem;
+}
 
 /* contact form */
 #contact-form {
